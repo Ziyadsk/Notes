@@ -1,17 +1,18 @@
 # VIM
 
-Vim is a modal text editor, open-source and installed almost on every linux distro out there.
+Vim is a modal text editor, open-source and available in almost all operating systems, especially [Apple MacOS]() and also on almost every [linux]() distrubition out there and apple.
 
 Vim is powerful, fast and efficient due to its ability to seprates the idea of actions,moving and editing of a file.
 
-Vim has 6 modes but these 3 are the most important:
+Vim has 12 modes but these 3 are the most important:
 
 - **Normal** mode
 - **Insert** mode 
 - **Visual** mode
+- **Command-line** mode
 
 > **Note** : By default when you enter vim you are in **NORMAL** mode
->$ -  if you enter any other mode to go back to the **NORMAL** mode press <button>ESC</button>
+>$ -  if you enter any other mode to go back to the **NORMAL** mode press <input type="submit" value="ESC">
 
 ## NORMAL MODE
 ## Motions
@@ -68,16 +69,16 @@ Here are the most used motions keybinding :
 **`d3w`** **d**eletes **3** **w**ords   
 **`3dd`** deletes 3 lines	
 
-> deletion also act as copying so when you dd a line you can just paste it with 'p'  
+> deletion also act as copying so when you **`dd`** a line you can just paste it with **`p`**  
 
 ### Copy and paste
 **`yy`** copies the entire line  
 **`p`** paste  
 **`y`** <motion_command>  
 * <ins>Examples</ins>:   
-	**`y$`** copies to the end of the line  
-	**`yG`** copies to the end of the file  
-	**`ygg`** copies to the beggining of the file  
+	**`y$`** copies from the cursor position to the end of the line  
+	**`yG`** copies from the cursor position to the end of the file  
+	**`ygg`** copies from the cursor position to the beggining of the file  
 	**`yw`** copies from the cursor position until the end of the word under the cursor  
 	**`yaw`** copies the entire word under the cursor  
 
@@ -117,8 +118,7 @@ Here are the most used motions keybinding :
 **`o`** creates a new line under the cursor line and then enters insert mode  
 **`O`** creates a new line above  the cursor line and then enters insert mode
 
-
-# VISUAL MODE
+## VISUAL MODE
 * visual mode is where you can make higlighted selection in the file 
 **`v`** entering visual mode  
 	* and then you can use it with any <motion_command>  
@@ -126,32 +126,52 @@ Here are the most used motions keybinding :
 	`v$` select from cursor position until the end of the line
 <motion command>
 
-**`CTRL v`**  
+**`CTRL v`** enters visual-block (**V-BLOCK**) mode 
+* **V-BLOCK** mode is like visual mode but the selection is done on columns   
+	* <ins>Example</ins>:  
+	**`CTRL v 4kI #<ESC>`** prefixes the 4 lines above with the `#` symbol.
 
 @visual mode + norm ex command
 
+## Command-line mode or EX commands
+You enter an Ex command by pressing **`:`** from **NORMAL** mode
+* Your command are written after the `:` that will appears at the bottom of the screen and when you are done writing the command press **<input type=submit value=ENTER>** to execute that command and you will be back in **NORMAL** mode. 
 
-# EX commands
-You enter an Ex command by pressiong ':' from normal mode
+**`w`** to save the current file  
+**`e <FILENAME>`** opens the `<FILENAME>` in vim  
+**`q`** quits vim  
+**`earlier <INT><m/h/s>`** Go back to the state of the file by specifing the time   
+- <ins>Example:</ins>  
+	`:earlier 10s`  
+	`:earlier 1h`
+
+**`:later <INT><m/h/s>`** Go back to the state of the file by specifing the time 
+- <ins>Example:</ins>  
+	`:later 30s`  
+	`:later 52m`
+
+
+%s / what to replace / <REPlACE_WITH> / flag  
+
+**`/`** search for a pattern (doesnt need to be prefixed with `:`)
+- <ins>Example:</ins> 
+	`/John` maches all the 'john' in the file  
+	`/^k` matches every lines that begins with `k`  
+	`/^y` matches every lines that ends with `k`  
+	- when multiple matches are found:  
+		**`n`** to go to the next occurence  
+		**`N`** to go the previous occurence	
+
+**`!<EXTERNAL_COMMAND>`** run an external command  
+- <ins>Examples</ins>:  
+		**`:!ls`**  
+		**`:!touch newFile`**
 
 @substiion
-w save a file
-e <FILENAME> opens a file in vim 
-%s / what to replace / <REPlACE_WITH> / flag
-earlier <INT>m 
-later <INT>
-/ searching
-	when match is found:
-		n to go to the next occurence
-		N to go the previous occurence	
 
-! run an external command
-	example: !ls
-
-
-
-
-# The .vimrc (Vim's configuration file)
+## The .vimrc (Vim's configuration file)
 vim's configuration file
 
 
+## Vimscript
+`@TODO`
