@@ -4,7 +4,7 @@ Vim is a modal text editor, open-source and available in almost all operating sy
 
 Vim is powerful, fast and efficient due to its ability to seprates the idea of actions,moving and editing of a file.
 
-Vim has 12 modes but these 3 are the most important:
+Vim has more than 10 modes but these 4 are the most important:
 
 - **Normal** mode
 - **Insert** mode 
@@ -40,7 +40,10 @@ Here are the most used motions keybinding :
 
 **`G`** to jump to end of the file
 ### using count with motions
-- vim support
+- vim support giving count to motions or actions
+	* <ins>Examples:</ins>
+	**`3j`** moves 3 lines down
+	**`10w`** moves 10 words forwards
 
 ## Actions
 ### Indentation
@@ -81,6 +84,9 @@ Here are the most used motions keybinding :
 	**`ygg`** copies from the cursor position to the beggining of the file  
 	**`yw`** copies from the cursor position until the end of the word under the cursor  
 	**`yaw`** copies the entire word under the cursor  
+	>  works also with counts 
+
+	**`10yy`** copy 10 lines from where the cursor is
 
 ### Replace
 
@@ -119,42 +125,51 @@ Here are the most used motions keybinding :
 **`O`** creates a new line above  the cursor line and then enters insert mode
 
 ## VISUAL MODE
-* visual mode is where you can make higlighted selection in the file 
+* **VISUAL** mode is where you can make higlighted selection in the file 
 **`v`** entering visual mode  
-	* and then you can use it with any <motion_command>  
-	<ins>Examples:</ins>
-	`v$` select from cursor position until the end of the line
-<motion command>
+	* and then you can use it with any <[motion_command]()>  
+	<ins>Examples:</ins>  
+	**`v$`** select from cursor position until the end of the line  
+	**`vgg`** select from cursor until the start of the file    
+	**`vfk`** select until the first occcurence of k starting from where the crusor is  
+	**`v4w`** select until the 4 words from where the cursor is    
 
-**`CTRL v`** enters visual-block (**V-BLOCK**) mode 
-* **V-BLOCK** mode is like visual mode but the selection is done on columns   
+* **`CTRL v`** enters visual-block (**V-BLOCK**) mode 
+	* **V-BLOCK** mode is like visual mode but the selection is done on columns   
 	* <ins>Example</ins>:  
 	**`CTRL v 4kI #<ESC>`** prefixes the 4 lines above with the `#` symbol.
 
-@visual mode + norm ex command
+>  Note : selecting in **VISUAL** mode and then going the to *COMMANDLINE MODE* is very powerful :  
+	* <ins>Example</ins>:  
+	**`norm <ANY_EX_COMMAND>`** execute an ex command on all the the selected lines
 
 ## Command-line mode or EX commands
 You enter an Ex command by pressing **`:`** from **NORMAL** mode
 * Your command are written after the `:` that will appears at the bottom of the screen and when you are done writing the command press **<input type=submit value=ENTER>** to execute that command and you will be back in **NORMAL** mode. 
 
+**`<NUMBER>`** goes to that line
+* <ins>Examples:</ins>  
+	`:142` goes to the line number 142
+
 **`w`** to save the current file  
 **`e <FILENAME>`** opens the `<FILENAME>` in vim  
 **`q`** quits vim  
-**`earlier <INT><m/h/s>`** Go back to the state of the file by specifing the time   
+**`earlier <NUMBER><m/h/s>`** Go back to the state of the file by specifing the time   
 - <ins>Example:</ins>  
 	`:earlier 10s`  
 	`:earlier 1h`
 
-**`:later <INT><m/h/s>`** Go back to the state of the file by specifing the time 
+**`:later <NUMBER><m/h/s>`** Go back to the state of the file by specifing the time 
 - <ins>Example:</ins>  
 	`:later 30s`  
 	`:later 52m`
 
-
-%s / what to replace / <REPlACE_WITH> / flag  
+**`%s/<REPLACED_TEXT>/<WHAT_TO_REPLACE_WITH>/<FLAG>`**  
+* <ins>Examples</ins>:  
+	**`%s/james/donald/g`** replace all occurencd of james with donald in the file
 
 **`/`** search for a pattern (doesnt need to be prefixed with `:`)
-- <ins>Example:</ins> 
+- <ins>Examples:</ins> 
 	`/John` maches all the 'john' in the file  
 	`/^k` matches every lines that begins with `k`  
 	`/^y` matches every lines that ends with `k`  
