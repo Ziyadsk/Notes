@@ -12,7 +12,7 @@ Vim has more than 10 modes but these 4 are the most important:
 - **Command-line** mode
 
 > **Note** : By default when you enter vim you are in **NORMAL** mode
->$ -  if you enter any other mode to go back to the **NORMAL** mode press <input type="submit" value="ESC">
+>$ -  if you enter any other mode to go back to the **NORMAL** mode press <kbd>ESC</kbd>
 
 ## NORMAL MODE
 ## Motions
@@ -21,6 +21,8 @@ Moving in vim is done mainly in **NORMAL** mode.
 Here are the most used motions keybinding :   
 
 **`0`** to go the start of the line  
+
+**`^`** jump to first non-whitspace character on the line
 
 **`$`** to go the end of the line  
 
@@ -39,16 +41,23 @@ Here are the most used motions keybinding :
 **`gg`** tojump to head of the file
 
 **`G`** to jump to end of the file
+
+**`gd`** to jump to definition
+
+**`df`** go the file under the cursor 
+
 ### using count with motions
 - vim support giving count to motions or actions
-	* <ins>Examples:</ins>
-	**`3j`** moves 3 lines down
+	* <ins>Examples:</ins>  
+	**`3j`** moves 3 lines down  
 	**`10w`** moves 10 words forwards
 
 ## Actions
 ### Indentation
-**`>>`** indentation  
-**`<<`** indent back
+**`>>`** indent  
+**`<<`** dedent
+**`>%`** indent a blcok
+**`<%`** dedent a blcok
 
 ### Deletion
 **`x`** deletes the character under the cursor  
@@ -112,7 +121,17 @@ Here are the most used motions keybinding :
 **`u`** to undo the last action  
 **`CTRL+r`** to redo  
 **`.`** is used to repeat the last action  
-	
+
+### More
+**`K`** opens manpage for the command under the cursor  
+**`J`** joins below with the current one
+
+**`gU`** change to upperCase the current character   
+**`gu`** change to lowercase the current character  
+**`g~`** toggle the case of the current character  
+**`gUaw`** to change a **w**ord to **U**ppercase
+
+**`CTRL a`** increments a number     
 
 ## INSERT MODE
 * insert mode is where you change text inside of the file you opened
@@ -132,9 +151,18 @@ Here are the most used motions keybinding :
 	**`v$`** select from cursor position until the end of the line  
 	**`vgg`** select from cursor until the start of the file    
 	**`vfk`** select until the first occcurence of k starting from where the crusor is  
-	**`v4w`** select until the 4 words from where the cursor is    
+	**`v4w`** select until the 4 words from where the cursor is   
+	**`v10kU`** change the 10 lines above into uppercase  
+
+	> special commands   
+	
+	**`vab`** to select everything between a pair of parantheses  
+	**`vaB`** to select everything between a pair of curly braces  
+	**`vat`** to select everything between a pair of `<>`  
+> O is used to move between the ends and the beginning of the selection
 
 * **`CTRL v`** enters visual-block (**V-BLOCK**) mode 
+
 	* **V-BLOCK** mode is like visual mode but the selection is done on columns   
 	* <ins>Example</ins>:  
 	**`CTRL v 4kI #<ESC>`** prefixes the 4 lines above with the `#` symbol.
@@ -159,14 +187,14 @@ You enter an Ex command by pressing **`:`** from **NORMAL** mode
 	`:earlier 10s`  
 	`:earlier 1h`
 
-**`:later <NUMBER><m/h/s>`** Go back to the state of the file by specifing the time 
+**`later <NUMBER><m/h/s>`** Go back to the state of the file by specifing the time 
 - <ins>Example:</ins>  
 	`:later 30s`  
 	`:later 52m`
 
 **`%s/<REPLACED_TEXT>/<WHAT_TO_REPLACE_WITH>/<FLAG>`**  
 * <ins>Examples</ins>:  
-	**`%s/james/donald/g`** replace all occurencd of james with donald in the file
+	**`:%s/james/donald/g`** replace all occurencd of james with donald in the file
 
 **`/`** search for a pattern (doesnt need to be prefixed with `:`)
 - <ins>Examples:</ins> 
@@ -182,11 +210,13 @@ You enter an Ex command by pressing **`:`** from **NORMAL** mode
 		**`:!ls`**  
 		**`:!touch newFile`**
 
-@substiion
+**`:help <WORD>`** displays the help for any command in vim
+
+## Tabs and Splits
+`@TODO`
 
 ## The .vimrc (Vim's configuration file)
-vim's configuration file
-
+The `.vimrc` is vim's configuration file.
 
 ## Vimscript
 `@TODO`
