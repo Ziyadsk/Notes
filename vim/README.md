@@ -168,12 +168,12 @@ Here are the most used motions keybinding :
 <a id='insert'></a>
 
 ## INSERT MODE
-* insert mode is where you change text inside of the file you opened
+* insert mode is where you change text inside the file you opened
 
 **`i`** enter insert mode underthe cursor    
 **`a`** move one character forwards and start insert mode    
-**`A`** enter insert mode at the start of the line  
-**`I`** enter insert mode at the end of the line  
+**`I`** enter insert mode at the start of the line  
+**`A`** enter insert mode at the end of the line  
 **`o`** creates a new line under the cursor line and then enters insert mode  
 **`O`** creates a new line above  the cursor line and then enters insert mode
 
@@ -182,7 +182,7 @@ Here are the most used motions keybinding :
 ## VISUAL MODE
 * **VISUAL** mode is where you can make higlighted selection in the file 
 **`v`** entering visual mode  
-	* and then you can use it with any <[motion_command](#motions)>  
+	* and then you can use it with any <[motion_command](#motions)> to select and then you can preform any <[action_command](#actions)> on the selection  
 	<ins>Examples:</ins>  
 	**`v$`** select from cursor position until the end of the line  
 	**`vgg`** select from cursor until the start of the file    
@@ -197,15 +197,18 @@ Here are the most used motions keybinding :
 	**`vat`** to select everything between a pair of `<>`  
 > O is used to move between the ends and the beginning of the selection
 
-* **`CTRL v`** enters visual-block (**V-BLOCK**) mode 
+* **`CTRL v`** enters visual-block (**V-BLOCK**) mode
 
 	* **V-BLOCK** mode is like visual mode but the selection is done on columns   
-	* <ins>Example</ins>:  
+		* <ins>Example</ins>:  
 	**`CTRL v 4kI #<ESC>`** prefixes the 4 lines above with the `#` symbol.
 
->  Note : selecting in **VISUAL** mode and then going the to *COMMANDLINE MODE* is very powerful :  
-	* <ins>Example</ins>:  
-	**`norm <ANY_EX_COMMAND>`** execute an ex command on all the the selected lines
+
+>  Note : selecting in **VISUAL** mode and then going the to *COMMANDLINE MODE* is very powerful :    
+
+<ins>Example</ins>:  
+
+**`norm <ANY_EX_COMMAND>`** execute an ex command on all the the selected lines
 
 <a href="commandLine"></a>
 
