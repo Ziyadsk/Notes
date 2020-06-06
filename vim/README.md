@@ -1,11 +1,10 @@
 # VIM
 
-Vim is a modal text editor, open-source and available in almost all operating systems, especially [Apple MacOS]() and also on almost every [linux]() distrubition out there and apple.
+Vim is a modal text editor, open-source and available in almost all operating systems, especially [Apple MacOS](https://en.wikipedia.org/wiki/MacOS) and also on almost every [linux](https://en.wikipedia.org/wiki/Linux) distrubition out there and apple.
 
 Vim is powerful, fast and efficient due to its ability to seprates the idea of actions,moving and editing of a file.
 
-Vim has more than 10 modes but these 4 are the most important:
-
+Vim has more than 10 modes but these 4 are the most important :
 - **Normal** mode
 - **Insert** mode 
 - **Visual** mode
@@ -14,8 +13,27 @@ Vim has more than 10 modes but these 4 are the most important:
 > **Note** : By default when you enter vim you are in **NORMAL** mode
 >$ -  if you enter any other mode to go back to the **NORMAL** mode press <kbd>ESC</kbd>
 
+
+## Table of content
+* [**NORMAL** Mode](#normal)
+	* [Motions](#motions)
+	* [Actions](#actions)
+		* [Indentation](#indentation)
+		* [Deletion](#deletion)
+		* [Copy and paste](#copy)
+		* [Replace](#replace)
+		* [Undo and redo](#undo)
+		* [More Commands](#more)
+* [**INSERT** Mode](#insert)
+* [**VISUAL** Mode](#visual)
+* [**COMMANDLINE** Mode](#commandLine)
+* [**Tabs and split**](#tabs)
+* [**The Vimrc**](#vimrc)
+* [**VimScript**](#vimscript)
+
+<a id='normal'></a>
 ## NORMAL MODE
-## Motions
+## *Motions*
 Moving in vim is done mainly in **NORMAL** mode.  
 
 Here are the most used motions keybinding :   
@@ -52,12 +70,18 @@ Here are the most used motions keybinding :
 	**`3j`** moves 3 lines down  
 	**`10w`** moves 10 words forwards
 
-## Actions
+<a id='action'></a>
+
+## *Actions*
+<a id="indentation"></a>
+
 ### Indentation
 **`>>`** indent  
-**`<<`** dedent
-**`>%`** indent a blcok
-**`<%`** dedent a blcok
+**`<<`** dedent  
+**`>%`** indent a blcok  
+**`<%`** dedent a blcok  
+
+<a id='deletion'></a>
 
 ### Deletion
 **`x`** deletes the character under the cursor  
@@ -83,10 +107,12 @@ Here are the most used motions keybinding :
 
 > deletion also act as copying so when you **`dd`** a line you can just paste it with **`p`**  
 
+<a id='copy'></a>
+
 ### Copy and paste
 **`yy`** copies the entire line  
 **`p`** paste  
-**`y`** <motion_command>  
+**`y`** <[motion_command](#motions)>  
 * <ins>Examples</ins>:   
 	**`y$`** copies from the cursor position to the end of the line  
 	**`yG`** copies from the cursor position to the end of the file  
@@ -97,11 +123,13 @@ Here are the most used motions keybinding :
 
 	**`10yy`** copy 10 lines from where the cursor is
 
+<a id='replace'></a>
+
 ### Replace
 
 **`r<CHAR>`** to replace the word under the cursor with a character `<CHAR>`   
 **`cc`** deletes line and puts you in insert mode    
-**`c`** <motion_command>
+**`c`** <[motion_command](#motions)> 
 * <ins>Examples:</ins>   
 	**`cw`** delete word and puts you in insert mode  
 	**`c$`** deletes from cursor postion to the end of the line and puts you in insert mode  
@@ -117,10 +145,14 @@ Here are the most used motions keybinding :
 
 **`R`** enters replace mode (you can keep replacing until quiting with <button>ESC</button>)  
 
+<a id='undro'></a>
+
 ### Undo and redo
 **`u`** to undo the last action  
 **`CTRL+r`** to redo  
 **`.`** is used to repeat the last action  
+
+<a id='more'></a>
 
 ### More
 **`K`** opens manpage for the command under the cursor  
@@ -133,6 +165,8 @@ Here are the most used motions keybinding :
 
 **`CTRL a`** increments a number     
 
+<a id='insert'></a>
+
 ## INSERT MODE
 * insert mode is where you change text inside of the file you opened
 
@@ -143,10 +177,12 @@ Here are the most used motions keybinding :
 **`o`** creates a new line under the cursor line and then enters insert mode  
 **`O`** creates a new line above  the cursor line and then enters insert mode
 
+<a id='visual'></a>
+
 ## VISUAL MODE
 * **VISUAL** mode is where you can make higlighted selection in the file 
 **`v`** entering visual mode  
-	* and then you can use it with any <[motion_command]()>  
+	* and then you can use it with any <[motion_command](#motions)>  
 	<ins>Examples:</ins>  
 	**`v$`** select from cursor position until the end of the line  
 	**`vgg`** select from cursor until the start of the file    
@@ -170,6 +206,8 @@ Here are the most used motions keybinding :
 >  Note : selecting in **VISUAL** mode and then going the to *COMMANDLINE MODE* is very powerful :  
 	* <ins>Example</ins>:  
 	**`norm <ANY_EX_COMMAND>`** execute an ex command on all the the selected lines
+
+<a href="commandLine"></a>
 
 ## Command-line mode or EX commands
 You enter an Ex command by pressing **`:`** from **NORMAL** mode
@@ -212,11 +250,19 @@ You enter an Ex command by pressing **`:`** from **NORMAL** mode
 
 **`:help <WORD>`** displays the help for any command in vim
 
+<a id='tabs'></a>
+
 ## Tabs and Splits
 `@TODO`
 
+<a id='vimrc'></a>
+
 ## The .vimrc (Vim's configuration file)
-The `.vimrc` is vim's configuration file.
+The `.vimrc` is vim's configuration file.  
+
+`@TODO`
+
+<a id='vimscript'></a>
 
 ## Vimscript
 `@TODO`
