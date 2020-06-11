@@ -1,7 +1,12 @@
 # Git 
-Git is a distrubuted version control system.
-Git helps you track the various stages of the developement of your projects
-Git is light, fast & efficient 
+Git is a distrubuted version control system.  
+Git helps you track the various stages of the developement of your projects  
+Git is light, fast & efficient   
 
-## Create a git repo
+## Create a git repository
 **`git init`** 
+
+## Cloning
+**`git clone <REPOSITORY_NAME>`**
+
+
