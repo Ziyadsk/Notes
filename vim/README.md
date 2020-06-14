@@ -241,7 +241,7 @@ You enter an Ex command by pressing **`:`** from **NORMAL** mode
 - <ins>Examples:</ins> 
 	`/John` maches all the 'john' in the file  
 	`/^k` matches every lines that begins with `k`  
-	`/^y` matches every lines that ends with `k`  
+	`/y$` matches every lines that ends with `y`  
 	- when multiple matches are found:  
 		**`n`** to go to the next occurence  
 		**`N`** to go the previous occurence	
