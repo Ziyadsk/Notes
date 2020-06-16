@@ -1,8 +1,8 @@
 # VIM
 
-Vim is a modal text editor, open-source and available in almost all operating systems, especially [Apple MacOS](https://en.wikipedia.org/wiki/MacOS) and also on almost every [linux](https://en.wikipedia.org/wiki/Linux) distrubition out there and apple.
+Vim is a modal text editor, open-source and available in almost all operating systems, especially [Apple MacOS](https://en.wikipedia.org/wiki/MacOS) and also on almost every [linux](https://en.wikipedia.org/wiki/Linux) distribution out there and apple.
 
-Vim is powerful, fast and efficient due to its ability to seprates the idea of actions,moving and editing of a file.
+Vim is powerful, fast and efficient due to its ability to separates the idea of actions,moving and editing of a file.
 
 Vim has more than 10 modes but these 4 are the most important :
 - **Normal** mode
@@ -22,7 +22,7 @@ Vim has more than 10 modes but these 4 are the most important :
 		* [Deletion](#deletion)
 		* [Copy and paste](#copy)
 		* [Replace](#replace)
-		* [Undo and redo](#undo)
+		* [Undo and redo](#undo-and-redo)
 		* [More Commands](#more)
 * [**INSERT** Mode](#insert)
 * [**VISUAL** Mode](#visual)
@@ -40,13 +40,13 @@ Here are the most used motions keybinding :
 
 **`0`** to go the start of the line  
 
-**`^`** jump to first non-whitspace character on the line
+**`^`** jump to first non-whitespace character on the line
 
 **`$`** to go the end of the line  
 
 **`%`** to jump between {} or [] or ()   
 
-**`w`** and b jumb by words forwards and backwards  
+**`w`** and b jump by words forwards and backwards  
 
 **`e`** to jump by words but puts cursor at the end of line  
 
@@ -54,9 +54,9 @@ Here are the most used motions keybinding :
 
 **`f<CHAR>`** jump to the first `<CHAR>` in that line 
 
-**`t<CHAR>`** jump one charachter before the first <CHAR> in that line   
+**`t<CHAR>`** jump one character before the first <CHAR> in that line   
 
-**`gg`** tojump to head of the file
+**`gg`** to jump to head of the file
 
 **`G`** to jump to end of the file
 
@@ -78,8 +78,8 @@ Here are the most used motions keybinding :
 ### Indentation
 **`>>`** indent  
 **`<<`** dedent  
-**`>%`** indent a blcok  
-**`<%`** dedent a blcok  
+**`>%`** indent a block  
+**`<%`** dedent a block  
 
 <a id='deletion'></a>
 
@@ -94,7 +94,7 @@ Here are the most used motions keybinding :
 
 **`dw`** deletes until the end of the word under the cursor  
 **`dd`** deletes the entire line  
-**`d$`** deletes from cursor postion to the end of the line  
+**`d$`** deletes from cursor position to the end of the line  
 **`d0`** deletes from cursor position to the start of the line  
 **`dgg`** deletes from cursor position to the start of the line  
 **`dG`** deletes from cursor position to the end of the line  
@@ -116,7 +116,7 @@ Here are the most used motions keybinding :
 * <ins>Examples</ins>:   
 	**`y$`** copies from the cursor position to the end of the line  
 	**`yG`** copies from the cursor position to the end of the file  
-	**`ygg`** copies from the cursor position to the beggining of the file  
+	**`ygg`** copies from the cursor position to the beginning of the file  
 	**`yw`** copies from the cursor position until the end of the word under the cursor  
 	**`yaw`** copies the entire word under the cursor  
 	>  works also with counts 
@@ -132,18 +132,18 @@ Here are the most used motions keybinding :
 **`c`** <[motion_command](#motions)> 
 * <ins>Examples:</ins>   
 	**`cw`** delete word and puts you in insert mode  
-	**`c$`** deletes from cursor postion to the end of the line and puts you in insert mode  
+	**`c$`** deletes from cursor position to the end of the line and puts you in insert mode  
 	**`c0`** deletes from cursor position to the start of the line and puts you in insert mode  
 	**`cgg`** deletes from cursor position to the start of the line and puts you in insert mode  
 	**`cG`** deletes from cursor position to the end of the line and puts you in insert mode  
 	**`cb`** deletes a words from cursor position and puts you in insert mode   
-	**`cf<CHAR>`** deletes to the first occurence of `<CHAR>` and puts you in insert mode  
+	**`cf<CHAR>`** deletes to the first occureence of `<CHAR>` and puts you in insert mode  
 	
 	>  works also with counts  
 
 	**`3cc`** deletes 3 lines and enters insert mode
 
-**`R`** enters replace mode (you can keep replacing until quiting with <button>ESC</button>)  
+**`R`** enters replace mode (you can keep replacing until quitting with <button>ESC</button>)  
 
 <a id='undro'></a>
 
@@ -170,7 +170,7 @@ Here are the most used motions keybinding :
 ## INSERT MODE
 * insert mode is where you change text inside the file you opened
 
-**`i`** enter insert mode underthe cursor    
+**`i`** enter insert mode under the cursor    
 **`a`** move one character forwards and start insert mode    
 **`I`** enter insert mode at the start of the line  
 **`A`** enter insert mode at the end of the line  
@@ -186,13 +186,13 @@ Here are the most used motions keybinding :
 	<ins>Examples:</ins>  
 	**`v$`** select from cursor position until the end of the line  
 	**`vgg`** select from cursor until the start of the file    
-	**`vfk`** select until the first occcurence of k starting from where the crusor is  
+	**`vfk`** select until the first occcurrence of k starting from where the cursor is  
 	**`v4w`** select until the 4 words from where the cursor is   
 	**`v10kU`** change the 10 lines above into uppercase  
 
 	> special commands   
 	
-	**`vab`** to select everything between a pair of parantheses  
+	**`vab`** to select everything between a pair of parentheses  
 	**`vaB`** to select everything between a pair of curly braces  
 	**`vat`** to select everything between a pair of `<>`  
 > O is used to move between the ends and the beginning of the selection
@@ -235,16 +235,16 @@ You enter an Ex command by pressing **`:`** from **NORMAL** mode
 
 **`%s/<REPLACED_TEXT>/<WHAT_TO_REPLACE_WITH>/<FLAG>`**  
 * <ins>Examples</ins>:  
-	**`:%s/james/donald/g`** replace all occurencd of james with donald in the file
+	**`:%s/james/donald/g`** replace all occurrences of james with donald in the file
 
-**`/`** search for a pattern (doesnt need to be prefixed with `:`)
+**`/`** search for a pattern (doesn't need to be prefixed with `:`)
 - <ins>Examples:</ins> 
-	`/John` maches all the 'john' in the file  
+	`/John` matches all the 'john' in the file  
 	`/^k` matches every lines that begins with `k`  
 	`/y$` matches every lines that ends with `y`  
 	- when multiple matches are found:  
-		**`n`** to go to the next occurence  
-		**`N`** to go the previous occurence	
+		**`n`** to go to the next occurrence  
+		**`N`** to go the previous occurrence	
 
 **`!<EXTERNAL_COMMAND>`** run an external command  
 - <ins>Examples</ins>:  
