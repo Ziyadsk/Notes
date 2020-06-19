@@ -49,6 +49,14 @@ let fruits = ["oranges","apples","kiwis"];
 	
 ```
 ## Objects
+
+
+### Objects/Array destructuring
+
+
+### spread operator
+
+
 #### Create an object 
 ```js
 let book = {
@@ -93,9 +101,9 @@ function(){
 ## Classes
 #### Create a class
 ```js
-	class Person {
+class Person {
 
-	}
+}
 ```
 
 #### Create a constructor
@@ -106,3 +114,6 @@ function(){
 
 
 ## JS & the browser
+
+
+## JS in the server

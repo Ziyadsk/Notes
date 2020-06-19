@@ -20,13 +20,12 @@ These programs are available on every  *nix system
 **`mkdir`** rename or move a file  
 **`touch`** creates a file  
 **`pwd`** creates a file  
-head 
-less
+head   
+less 
 **`cat`** print files to the terminal
 
 grep
 echo
-
 
 ### text editors
 nano

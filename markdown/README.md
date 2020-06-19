@@ -27,7 +27,7 @@
 > **bold text** 
 ### strikethrough
 ```md
-~~ striked~~
+~~striked~~
 ```
 ## Links
 * to create a link in markdown , put the link text inside square `[]` brackets and then followed by parentheses `()` that contains the link  
@@ -48,10 +48,17 @@
 ## Lists
 
 ## Code
+* To display a block on code use backticks ``  
+<ins>Examples</ins>
+#### Inline
+**`echo "test" `**
 
 ### Blocks
-
-### inline
+```js 
+function myFunc(name){
+    console.log(Hello `${name}`)
+}
+```
 
 ## Blockquotes
 
