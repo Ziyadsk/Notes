@@ -56,11 +56,22 @@
 ### Blocks
 ```js 
 function myFunc(name){
-    console.log(Hello `${name}`)
+    console.log(`Hello ${name}`)
 }
 ```
 
 ## Blockquotes
-
+> some quotoes
 ## Tables
-| | |
+```
+| product | price |
+|--------|--------|
+| tv     | 2000   |
+| cat    | 90     |
+```
+> output  
+ 
+| product | price |
+|--------|--------|
+| tv     | 2000   |
+| cat    | 90     |
