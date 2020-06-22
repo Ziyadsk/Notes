@@ -73,8 +73,13 @@ let book = {
 
 ```js
 function myfunction() {
-	return ""; 
+	return "john doe"; 
 }	
+
+```
+##### & then call it 
+```js
+myfunction();
 ```
 #### Anonymous functions
 ```js
@@ -116,4 +121,4 @@ class Person {
 ## JS & the browser
 
 
-## JS in the server
+## Server side JS

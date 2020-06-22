@@ -1,4 +1,13 @@
 # Markdown
+* Markdown is a lightweight markup language with plain-text-formatting syntax, often used to create README.md files like this one.
+## Content
+
+* [Heading](#heading)  
+* [Bold & italic text](#bold-and-italic-text)  
+* [Links](#links)  
+* [Images](#images)  
+* [Code blocks](#code) 
+* [Tables](#tables)
 
 ## Heading
 * to create a heading in markdown, write any text preceded by a (1 to 6) pound symbols (#), these represent [HTML](../HTML/README.md) **`<h1>`** to **`<h6>`**  
@@ -47,7 +56,36 @@
 ![](https://via.placeholder.com/150)
 ## Lists
 
-## Code
+### Ordered list
+```
+1. One
+2. Two
+3. four
+```
+>output :
+1. One
+2. Two
+4. four
+
+### Unordered list  
+```
+* Apples  
+* Oranges
+```
+>output :
+* Apples  
+* Oranges
+### Nested items
+```
+* Parents
+    * Child
+    * Another child
+```
+>output :
+* Parents
+    * Child
+    * Another child
+ # Code
 * To display a block on code use backticks ``  
 <ins>Examples</ins>
 #### Inline
@@ -61,7 +99,7 @@ function myFunc(name){
 ```
 
 ## Blockquotes
-> some quotoes
+> some quote
 ## Tables
 ```
 | product | price |
@@ -75,3 +113,9 @@ function myFunc(name){
 |--------|--------|
 | tv     | 2000   |
 | cat    | 90     |
+
+
+## line separator
+**`---`**  to create a horizontal line
+> output  
+---
