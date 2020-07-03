@@ -1,24 +1,66 @@
 # CSS 
 *cascading style sheets*
-* element , class & ids
 
-* Colors
+##  Elements , class & ids
 
-* Bakcround
+### Selection
 
-* Padding & margins
+##  CSS Propreties
+	
+## Colors
+	* literal 
+	* hex
+	* rgb
+	* hsl
+## Background
+	* color
+	* image
+	* size
+	* background-blend-mode
+	* mix-blend-mode
 
-* Fonts
+##  Padding & margins
+### Padding
+### Margin
+
+## Display & Position
+
+## Fonts
 	* Size
 	* Family
 	* style
 	* weight
 	* Importing new fonts
 
+## Shadows
+	 * Box-shadow
+	 * text-shadow
 
+## Filters
+* filter()
+* backdrop-filter 
+
+
+## Flex & Grid
 * Flexbox
+	* wrap 
+	* direction
+	* justify-content
+
 * Grid
- 
+	* grid-template
+	* place-items 
+	* gap 
+
+## Animations
+### Transition
+### Transform
+	* translate 
+	* rotate
+	* skew 
+
+
+## Methodologies 
 * atomicCSS : (FUNCTIONNAL css)
 immutabily and separation
 
@@ -27,4 +69,4 @@ immutabily and separation
 * SMACSS
 
 * BEM 
-element__child_elem
+`element__child_elem`
