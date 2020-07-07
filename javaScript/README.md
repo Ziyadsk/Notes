@@ -55,6 +55,11 @@ let fruits = ["oranges","apples","kiwis"];
 
 
 ### spread operator
+```js
+	let arr1 = [1,2,3];
+	// can be used to create new arrays from old ones
+	let newArr = [...arr1,4];
+```
 
 
 #### Create an object 
@@ -112,6 +117,14 @@ class Person {
 ```
 
 #### Create a constructor
+```js
+class Person {
+	constructor(name){
+		
+	}
+}
+```
+
 #### New instance a class
 ## Promises
 

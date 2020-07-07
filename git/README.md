@@ -9,4 +9,11 @@ Git is light, fast & efficient
 ## Cloning
 **`git clone <REPOSITORY_NAME>`**
 
-
+* fetch 
+* pull 
+* push
+* add 
+* commit 
+* tag
+* stash
+* reset

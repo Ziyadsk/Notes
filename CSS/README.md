@@ -1,9 +1,31 @@
 # CSS 
 *cascading style sheets*
 
-##  Elements , class & ids
+## Selection
+`*` : global selector that select every html tag on the page
+### Type selector
+Select the type of a specifig tag  
 
-### Selection
+<ins>Example:</ins>  
+this style will be applied on every `p` tag on the page  
+```css 
+p {
+	color : red ; 
+}
+```
+
+### Classes and Ids
+### Ids
+`#title`
+### Classes
+
+`.links`  
+`button.links`
+`button.links.primary`
+
+#### Select children 
+#### Direct child
+### Pseudo selectors
 
 ##  CSS Propreties
 	
