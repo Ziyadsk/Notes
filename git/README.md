@@ -7,13 +7,29 @@ Git is light, fast & efficient
 **`git init`** 
 
 ## Cloning
-**`git clone <REPOSITORY_NAME>`**
+**`git clone <REPOSITORY_NAME>**`**
 
+## Status
+## Staging
+**`git add <FILENAME>**`**
+
+## Commiting changes
+**`git commit `**
+* or use the shorthand method:   
+**`git commit -m "the commit message`**
+
+## 
 * fetch 
 * pull 
 * push
-* add 
+ 
 * commit 
 * tag
 * stash
 * reset
+### Log
+### diff
+
+## Branches
+### delete a branch
+`git branch -d <BRANCH_NAME>`

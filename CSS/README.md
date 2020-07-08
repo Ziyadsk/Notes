@@ -3,6 +3,7 @@
 
 ## Selection
 `*` : global selector that select every html tag on the page
+`,` : use comma to select multiple elements
 ### Type selector
 Select the type of a specifig tag  
 
@@ -24,11 +25,40 @@ p {
 `button.links.primary`
 
 #### Select children 
+
 #### Direct child
+`>`
+#### Siblings
+`~` every sibling
+`+` 1 next 
 ### Pseudo selectors
+`hover`
+`focus`
+### Nth-Child
+`first-child`
+`nth-child()`
+`only-child`
+### Not()
+
+### Pseudo elements
+#### Before
+#### After
+
 
 ##  CSS Propreties
-	
+
+## Attributes selectors
+```Css
+[Attr] {
+	color:blue ; 
+}
+```
+```Css
+[Attr^="java"] {
+	color:blue ; 
+}
+```
+
 ## Colors
 	* literal 
 	* hex
@@ -77,10 +107,9 @@ p {
 ## Animations
 ### Transition
 ### Transform
-	* translate 
-	* rotate
-	* skew 
-
+* translate 
+* rotate
+* skew 
 
 ## Methodologies 
 * atomicCSS : (FUNCTIONNAL css)
