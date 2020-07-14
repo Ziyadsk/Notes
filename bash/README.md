@@ -37,7 +37,8 @@ less
 wc 
 grep
 echo
-
+chown 
+chmod 
 ### Redirections & Background processes
 redirection << && >>  < && >  
 #### Pipes

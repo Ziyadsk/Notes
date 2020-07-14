@@ -25,10 +25,15 @@ let n = 10 ;
 typeof(n); // this will return 'number'
 typeof("ok"); // this will return 'string'
 ```
-
+> *you can convert to numbers by preceding with the + operator*
 ## Numbers
 
 ## String
+#### String interpolation
+```js 
+	let name = "Larry";
+	console.log(`Hello, ${name}`);
+```
 #### includes
 ```js
 ``` 
@@ -70,8 +75,22 @@ let book = {
 }
 ```
 
-## Conditional
+#### Access a field
+
+```js
+let title = book.title;  // "A song of ice and fire"
+```
+
+## Conditionals
+### If/Else
+### Switch
+
 ## Loops
+### While
+### For loop
+#### c-style-for
+#### for-in
+#### for-of
 
 ## Functions
 #### Create a function
@@ -91,7 +110,7 @@ myfunction();
 // anonymous functions can be passed as argument to some function
 // or assigned to a variable to be called later
 // or just be called instantly
-function(){
+const f = function(){
 	console.log("anonymous function called")
 }();
 ```
@@ -105,7 +124,6 @@ function(){
 // or called immediatly
 
 (() => console.log("smallest function call in js"))() 
-
 
 ```
 ## Classes
@@ -126,6 +144,9 @@ class Person {
 ```
 
 #### New instance a class
+
+#### Getters & setters
+
 ## Promises
 
 ## imports

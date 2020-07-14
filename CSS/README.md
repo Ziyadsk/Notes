@@ -48,12 +48,13 @@ p {
 ##  CSS Propreties
 
 ## Attributes selectors
-```Css
+
+```CSS
 [Attr] {
 	color:blue ; 
-}
-```
-```Css
+}```
+
+```CSS
 [Attr^="java"] {
 	color:blue ; 
 }
@@ -72,10 +73,22 @@ p {
 	* mix-blend-mode
 
 ##  Padding & margins
+### Width
+###  Max-width & min-width
+* %
+* ch
 ### Padding
+#### short form
+
+#### semi-short
+
 ### Margin
 
 ## Display & Position
+### Absolute
+### relative
+### fixes
+### sticky
 
 ## Fonts
 	* Size
@@ -83,6 +96,8 @@ p {
 	* style
 	* weight
 	* Importing new fonts
+
+## Borders & outline
 
 ## Shadows
 	 * Box-shadow
@@ -110,6 +125,9 @@ p {
 * translate 
 * rotate
 * skew 
+## other 
+### opacity
+### cursor
 
 ## Methodologies 
 * atomicCSS : (FUNCTIONNAL css)
