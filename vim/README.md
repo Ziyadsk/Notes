@@ -269,3 +269,7 @@ The `.vimrc` is vim's configuration file.
 
 ## Vimscript
 `@TODO`
+
+
+## Encrypting a file using vim
+`:X`

@@ -1,5 +1,4 @@
 # Javascript
-
 ## Variables 
 #### Create a variable
 ```js
@@ -53,11 +52,14 @@ let fruits = ["oranges","apples","kiwis"];
 	// shift & pop
 	
 ```
+
+#### Map/Filter/Reduce
+
 ## Objects
 
 
 ### Objects/Array destructuring
-
+ 
 
 ### spread operator
 ```js
@@ -111,7 +113,7 @@ myfunction();
 // or assigned to a variable to be called later
 // or just be called instantly
 const f = function(){
-	console.log("anonymous function called")
+	console.log("anonymous function called");
 }();
 ```
 
@@ -138,7 +140,6 @@ class Person {
 ```js
 class Person {
 	constructor(name){
-		
 	}
 }
 ```
@@ -147,12 +148,14 @@ class Person {
 
 #### Getters & setters
 
+## localStorage/sessionStorage
+
 ## Promises
 
 ## imports
 
+%$^
 
 ## JS & the browser
-
 
 ## Server side JS
