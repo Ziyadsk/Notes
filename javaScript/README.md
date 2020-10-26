@@ -47,13 +47,16 @@ let fruits = ["oranges","apples","kiwis"];
 	// array.length
 
 ```
-#### remove first of last element of the array 
+#### remove first or last element of the array 
 ```js
 	// shift & pop
 	
 ```
 
 #### Map/Filter/Reduce
+
+
+## Some/indexOf
 
 ## Objects
 
@@ -88,6 +91,9 @@ let title = book.title;  // "A song of ice and fire"
 ### Switch
 
 ## Loops
+```js
+	for(;;){}
+```
 ### While
 ### For loop
 #### c-style-for
@@ -140,12 +146,15 @@ class Person {
 ```js
 class Person {
 	constructor(name){
+		this.name = name ; 
 	}
 }
 ```
 
 #### New instance a class
-
+```js 
+const p1 = new Person('P1');
+```
 #### Getters & setters
 
 ## localStorage/sessionStorage
@@ -159,3 +168,12 @@ class Person {
 ## JS & the browser
 
 ## Server side JS
+
+
+## Date
+### Date.now()
+```js
+	console.log(Date.now())
+	let d = new Date(Date.now());
+	console.log(d);
+```

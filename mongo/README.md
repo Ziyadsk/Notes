@@ -17,7 +17,7 @@
 `db.<CollectionName>.find().sort(<SORTING_OBJECT>)`
 
 #### desc sorting
-	`db.<CollectionName>.find().sort({ <KEY> : -1 })`
+	`db.<CollectionName>.find().sort({ <**KEY**> : -1 })`
 	
 #### $elemMatch
 
@@ -29,7 +29,7 @@
 
 ## $set a spectific field
 
-``` 
+
 db.[CollectionName].update({ 
 $set: {
 	// target specific fields here

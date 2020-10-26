@@ -77,18 +77,13 @@ p {
 ###  Max-width & min-width
 * %
 * ch
-### Padding
+### **Padding**
 #### short form
 
 #### semi-short
 
 ### Margin
 
-## Display & Position
-### Absolute
-### relative
-### fixes
-### sticky
 
 ## Fonts
 	* Size
@@ -107,13 +102,21 @@ p {
 * filter()
 * backdrop-filter 
 
+## Position
+### Absolute
+### relative
+### fixes
+### sticky
+## Display 
 
-## Flex & Grid
+### Flex
 * Flexbox
 	* wrap 
 	* direction
+	* align-items
 	* justify-content
 
+### Grid
 * Grid
 	* grid-template
 	* place-items 
