@@ -27,3 +27,8 @@
 
 #### Tab navigation 
 
+## Expo
+#### expo init
+#### expo start
+#### expo build
+#### expo publish
